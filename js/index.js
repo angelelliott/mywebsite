@@ -8,7 +8,7 @@ const Title = document.querySelector("#angel")
 let tl = gsap.timeline();
 
 tl
-  .to(Title, { duration: 0.5, text: '꒰ა ANGEL ໒꒱', ease: "none"}, "+=1")
+  .to(Title, { duration: 0.5, text: '⋆ANGEL⋆', ease: "none"}, "+=1")
   .to(Title, {rotation: -360, duration: 1, ease: "elastic"}  )
   .to('.buttons', {duration: 1, opacity:1});
 
