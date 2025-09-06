@@ -1,7 +1,7 @@
 import { Draggable } from "/node_modules/gsap/Draggable.js";
 import { TextPlugin } from "/node_modules/gsap/TextPlugin.js";
 
-gsap.registerPlugin(, Draggable, TextPlugin);
+gsap.registerPlugin(Draggable, TextPlugin);
 
 const Title = document.querySelector("#angel")
 
