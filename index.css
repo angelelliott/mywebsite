@@ -15,14 +15,16 @@ h1 {
   font-weight: 400;
   font-style: bold;
   font-size: 12vw;
-  background:  rgba(217, 220, 36, 1); 
+  background: rgba(255, 255, 3, 1); 
   background-clip: text; 
   -webkit-text-stroke-width: 8px;
   -webkit-text-stroke-color:   rgba(57, 40, 117, 1);
+  text-shadow:  rgba(255, 255, 3, 1) 10px 10px 10px;
+
 } 
 
 h1:hover{
-   color: rgba(255, 146, 3, 1) ;
+   color:  rgba(255, 255, 3, 1) 10px 10px 10px;
   }
 
 body {
@@ -36,26 +38,37 @@ body {
 }
 
 button {
-  
-  background: radial-gradient(ellipse at center in hsl shorter hue, rgba(255, 123, 187, 1) 0%,  rgba(255, 3, 125, 1) 25%, rgba(255, 123, 187, 1) 50%,  rgba(255, 3, 125, 1) 75%,  rgba(255, 123, 187, 1) 100%);
-  border: dotted rgba(217, 220, 36, 1) 10px;
-  /* padding: 10px 10px 5px 5px; */
-  border-radius: 25%;
-  padding-bottom: 5%;
+  background: radial-gradient(ellipse at center in hsl shorter hue, 
+  rgba(255, 3, 125, 1) 5%, rgba(255, 123, 187, 1) 10%,  rgba(255, 3, 125, 1) 20%, 
+  rgba(255, 123, 187, 1) 30%,  rgba(255, 3, 125, 1) 30%,  
+  rgba(255, 123, 187, 1) 40%,  rgba(255, 3, 125, 1) 55%, rgba(255, 123, 187, 1) 55%,
+   rgba(255, 3, 125, 1) 60%,rgba(255, 123, 187, 1) 65%,  rgba(255, 3, 125, 1) 80%,
+  rgba(255, 123, 187, 1) 100%);
+  border: dotted rgba(255, 255, 3, 1) 1vw; 
+  border-radius: 50%;
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center;    /* Vertically center */
+  text-align:center;
   opacity: 100%;
-  height: 6vw;
-  width: 17vw;
-  font-family: "Cherry Bomb One", system-ui;;
+  height: 8vw;
+  width: 18vw;
+  padding: 2vw; 
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 3vw;
   color:  rgba(57, 40, 117, 1);
-  /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
+  text-shadow: rgba(241, 244, 157, 1) 1px 1px 5px;
+  box-shadow: 6px 6px 10px  rgba(57, 40, 117, 1),
+    -5px -5px 10px   rgba(57, 40, 117, 1);
 }
 
 button:hover {
-  background: white;
-  color: black;
+  background: red;
+  color:  rgba(255, 255, 3, 1); 
   opacity: 100%;
-  border: dotted black 10px;
+  border: double 1vw  rgba(0, 0, 0, 1);
   cursor: pointer;
 
 }

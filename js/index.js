@@ -10,6 +10,6 @@ let tl = gsap.timeline();
 tl
   .to(Title, { duration: 0.5, text: '⋆ANGEL⋆', ease: "none"}, "+=1")
   .to(Title, {rotation: -360, duration: 1, ease: "elastic"}  )
-  .to('.buttons', {duration: 1, opacity:1});
+  .to('.buttons', {duration: 1.5, opacity:1});
 
 Draggable.create(Title, {type: "rotation",});
