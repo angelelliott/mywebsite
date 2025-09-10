@@ -8,8 +8,9 @@ const Title = document.querySelector("#angel")
 let tl = gsap.timeline();
 
 tl
-  .to(Title, { duration: 0.5, text: '⋆ANGEL⋆', ease: "none"}, "+=1")
-  .to(Title, {rotation: -360, duration: 1, ease: "elastic"}  )
-  .to('.buttons', {duration: 1.5, opacity:1});
+  .from(Title, { scale: 0, opacity: 0, x: -300, y: -300, duration: 2, ease: Power1.easeIn })  
+  .to(Title, { duration: 1.5, text: '⋆ANGEL⋆', ease: "none"},)
+  // .to(Title, {duration: 1, scale:0 , ease: Power1.easeIn})
+  .to('.buttons', {duration: 1, opacity:1});
 
 Draggable.create(Title, {type: "rotation",});
