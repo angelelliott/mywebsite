@@ -24,8 +24,9 @@ h1 {
 } 
 
 h1:hover{
-   color:  white;
-     text-shadow: white 10px 10px 10px;
+   color: rgba(191, 255, 0, 1);
+   text-shadow:  rgba(191, 255, 0, 1) 10px 10px 10px;
+   cursor: grab;
   }
 
 body {
@@ -35,7 +36,7 @@ body {
 .buttons {
   display: flex;
   justify-content: space-around;
-  opacity: 0;
+  opacity: 1;
 }
 
 button {
@@ -51,7 +52,7 @@ button {
   justify-content: center; /* Horizontally center */
   align-items: center;    /* Vertically center */
   text-align:center;
-  opacity: 100%;
+  /* opacity: 100%; */
   height: 4vw;
   width: 20vw;
   padding: 3vw; 
@@ -66,12 +67,81 @@ button {
 }
 
 button:hover {
-  background: white;
+  background:  rgba(191, 255, 0, 1);
   color:  rgba(57, 40, 117, 1); 
   opacity: 100%;
   border: double 1vw   rgba(57, 40, 117, 1);
-  cursor: pointer;
   text-shadow:  rgba(57, 40, 117, 1) 0px 0px 0px;
+  cursor: grab;
 
+}
 
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0); /*Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #ff4800ff;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 2vw;
+  border-radius: 20%;
+  border: 1vw double rgba(191, 255, 0, 1);
+  width: 75%; /* Could be more or less, depending on screen size */
+  display: flex;
+  justify-content: space-around; /* Horizontally center */
+  align-items: center;    /* Vertically center */
+  text-align:center;
+  gap: 5%;
+  font-size: 3vw;
+  font-family: "Kode Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+  color: rgba(191, 255, 0, 1);
+  text-shadow: 1px 1px 1px  rgba(57, 40, 117, 1);
+  box-shadow: 6px 6px 10px  rgba(57, 40, 117, 1),
+    -5px -5px 10px   rgba(57, 40, 117, 1);
+}
+
+.selfie {
+  border-radius: 20%;
+  border: 1vw double rgba(191, 255, 0, 1);
+  float: left;
+  width: 30vw;
+  height: 35vw;
+}
+
+/* The Close Button */
+.close {
+  color:rgba(191, 255, 0, 1);
+  float: right;
+  font-size: 5vw;
+   font-family: "Lobster", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   cursor: grab;
+
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+}
+
+.special-word {
+  font-family: "Lobster", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  letter-spacing: 0.4rem;
 }

@@ -12,24 +12,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="angel.png">
+    <link rel="icon" type="image/x-icon" href="images/angel.png">
     
 
 
 </head>
 <body>
-    <div>
-        <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrambleTextPlugin.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js"></script>
-        <script type="module" src="js/index.js"></script>
-        <h1 id="angel">⋆˚꩜｡☁｡꩜⋆˚ </h1>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrambleTextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js"></script>
+    <script type="module" src="js/index.js"></script>
+    <script type="module" src="js/modals.js"></script>
+    <h1 id="angel">⋆˚꩜｡☁｡꩜⋆˚ </h1>
     <div class="buttons">
         <button type="button" >publications</button>
-        <button type="button" >about</button>
+        <button type="button" id="aboutButton" >about</button>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>  
+                <img class= "selfie" src="images/IMG_0859.JPG" alt="angel" height="300vw">  
+                <p> <span class="special-word">Hello!</span> My name is Angel. I am a <b>musician</b>, <b>artist</b>, and <b>computer scientist</b>! </p>
+            </div>
+        </div>
+
         <button type="button" >resum&eacute;</button>
     </div>
     
