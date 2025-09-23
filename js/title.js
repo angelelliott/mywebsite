@@ -1,5 +1,5 @@
-import { Draggable } from "/node_modules/gsap/Draggable.js";
-import { TextPlugin } from "/node_modules/gsap/TextPlugin.js";
+import { Draggable } from "https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/Draggable.min.js";
+import { TextPlugin } from "https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js";
 
 gsap.registerPlugin(Draggable, TextPlugin);
 
