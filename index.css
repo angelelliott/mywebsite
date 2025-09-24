@@ -14,7 +14,7 @@ h1 {
   color: transparent;
   font-weight: 400;
   font-style: bold;
-  font-size: 15vw;
+  font-size: 14vw;
   background: rgba(255, 255, 3, 1); 
   background-clip: text; 
   -webkit-text-stroke-width: 8px;
@@ -52,7 +52,7 @@ button {
   justify-content: center; /* Horizontally center */
   align-items: center;    /* Vertically center */
   text-align:center;
-  width: 18%;
+  width: 17%;
   padding-top:1%;
   padding-right: 3%;
   padding-bottom: 1%;
@@ -60,7 +60,7 @@ button {
   font-family: "Lobster", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 3vw;
+  font-size: 2.5vw;
   color:  rgba(57, 40, 117, 1);
   text-shadow: rgba(241, 244, 157, 1) 1px 1px 5px;
   box-shadow: 6px 6px 10px  rgba(57, 40, 117, 1),
@@ -99,6 +99,7 @@ button:hover {
   border-radius: 20%;
   border: 1vw double rgba(191, 255, 0, 1);
   width: 75%; /* Could be more or less, depending on screen size */
+  height: 50%;
   display: flex;
   justify-content: space-around; /* Horizontally center */
   align-items: center;    /* Vertically center */
@@ -118,8 +119,8 @@ button:hover {
   border-radius: 20%;
   border: 1vw double rgba(191, 255, 0, 1);
   float: left;
-  width: 30vw;
-  height: 35vw;
+  width: 30%;
+  height: 95%;
 }
 
 /* The Close Button */
@@ -136,7 +137,7 @@ button:hover {
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: rgba(57, 40, 117, 1);
   text-decoration: none;
 }
 
