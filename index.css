@@ -30,7 +30,10 @@ h1:hover{
   }
 
 body {
-  background: linear-gradient( rgba(77, 109, 240, 1));
+  background: rgba(97, 58, 255, 1);
+  cursor: pointer;
+  
+
 }
 
 .buttons {
