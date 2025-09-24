@@ -1,9 +1,3 @@
- import gsap from 'https://cdn.jsdelivr.net/npm/gsap@3.13.0/+esm'
- import Draggable from "https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/Draggable.min.js";
- import TextPlugin from "https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js";
-
-gsap.registerPlugin(Draggable, TextPlugin);
-
 const Title = document.querySelector("#angel")
 
 let tl = gsap.timeline();
