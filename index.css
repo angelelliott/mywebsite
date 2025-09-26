@@ -17,34 +17,33 @@ h1 {
   font-size: 14vw;
   background: rgba(255, 255, 3, 1); 
   background-clip: text; 
-  -webkit-text-stroke-width: 8px;
+  -webkit-text-stroke-width: 0.5vw;
   -webkit-text-stroke-color:   rgba(57, 40, 117, 1);
-  text-shadow:  rgba(255, 255, 3, 1) 10px 10px 10px;
+  text-shadow:  rgba(255, 255, 3, 1) 0.5vw 0.5vw 0.5vw;
 
 } 
 
-h1:hover{
-   color: rgba(191, 255, 0, 1);
-   text-shadow:  rgba(191, 255, 0, 1) 10px 10px 10px;
-   cursor: grab;
-  }
 
 body {
   background: rgba(97, 58, 255, 1);
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+
   
 
 }
 
 .buttons {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   opacity: 1;
 }
 
 button {
   background: radial-gradient(ellipse at center in hsl shorter hue, 
-  rgba(255, 3, 125, 1) 5%, rgba(255, 123, 187, 1) 10%,  rgba(255, 3, 125, 1) 20%, 
+  rgba(255, 123, 187, 1) 10% 5%, rgba(255, 123, 187, 1) 10%,  rgba(255, 3, 125, 1) 20%, 
   rgba(255, 123, 187, 1) 30%,  rgba(255, 3, 125, 1) 30%,  
   rgba(255, 123, 187, 1) 40%,  rgba(255, 3, 125, 1) 55%, rgba(255, 123, 187, 1) 55%,
    rgba(255, 3, 125, 1) 60%,rgba(255, 123, 187, 1) 65%,  rgba(255, 3, 125, 1) 80%,
@@ -65,9 +64,9 @@ button {
   font-style: normal;
   font-size: 2.5vw;
   color:  rgba(57, 40, 117, 1);
-  text-shadow: rgba(241, 244, 157, 1) 1px 1px 5px;
-  box-shadow: 6px 6px 10px  rgba(57, 40, 117, 1),
-    -5px -5px 10px   rgba(57, 40, 117, 1);
+  text-shadow: rgba(241, 244, 157, 1) 0.1vw 0.1vw 0.1vw;
+  box-shadow: 0.4vw 0.4vw 0.8vw  rgba(57, 40, 117, 1),
+    -0.4vw -0.4vw 0.8vw   rgba(57, 40, 117, 1);
 }
 
 button:hover {
@@ -75,7 +74,6 @@ button:hover {
   color:  rgba(57, 40, 117, 1); 
   opacity: 100%;
   border: double 1vw   rgba(57, 40, 117, 1);
-  text-shadow:  rgba(57, 40, 117, 1) 0px 0px 0px;
   cursor: grab;
 
 }
@@ -102,9 +100,9 @@ button:hover {
   border-radius: 20%;
   border: 1vw double rgba(191, 255, 0, 1);
   width: 75%; /* Could be more or less, depending on screen size */
-  height: 50%;
+  height: auto;
   display: flex;
-  justify-content: space-around; /* Horizontally center */
+  justify-content: space-round; /* Horizontally center */
   align-items: center;    /* Vertically center */
   text-align:center;
   gap: 5%;
@@ -123,7 +121,7 @@ button:hover {
   border: 1vw double rgba(191, 255, 0, 1);
   float: left;
   width: 30%;
-  height: 95%;
+  height: 70%;
 }
 
 /* The Close Button */

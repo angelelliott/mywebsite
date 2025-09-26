@@ -25,19 +25,47 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js"></script>
     <script type="module" src="/js/title.js"></script>
     <script type="module" src="/js/modals.js"></script>
+    <script type="module" src="js/modals2.js"></script>
+    <script type="module" src="js/modals3.js"></script>
+
     <h1 id="angel">⋆˚꩜｡☁｡꩜⋆˚ </h1>
     <div class="buttons">
-        <button type="button" id="publicationsButton" >publications</button>
-        <button type="button" id="aboutButton" >about me</button>
-        <div id="myModal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>  
-                <img class= "selfie" src="images/IMG_0859.JPG" alt="angel" height="300vw">  
-                <p> <span class="special-word">Hello!</span> My name is Angel. I am a <b>musician</b>, <b>artist</b>, and <b>computer scientist</b>! </p>
+            <!-- publications button -->
+            <button type="button" id="pubButton" >about my pets</button>
+            <div id="myModal2" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="myClose2">&times;</span>  
+                    <p>I have 3 pets. Their names are Mec, Amelia, and Patu.</p>
+                </div>
             </div>
-        </div>
 
-        <button type="button" >resum&eacute;</button>
+            <!-- about me button -->
+            <button type="button" id="aboutButton" >about me</button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="myClose">&times;</span>  
+                    <img class= "selfie" src="images/IMG_0859.JPG" alt="angel" height="300vw">  
+                    <p> <span class="special-word">Hello!</span> My name is Angel. I am a <b>musician</b>, <b>artist</b>, and <b>computer scientist</b>! </p>
+                </div>
+            </div>
+
+            <button type="button" id="profButton" >professional</button>
+             <div id="myModal3" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="myClose3">&times;</span>  
+                    <p><span class="special-word">If you must...</span> here are my
+                    <a href="resume/UlloaAngelResume.pdf" download>
+                        Resume
+                    </a>, 
+                    <a href="https://www.linkedin.com/in/angelelliottt" download>
+                        LinkedIn
+                    </a>, and
+                    <a href="http://www.github.com/angelelliott" download>
+                        Github
+                    </a>.
+                </p>
+                </div>
+            </div>
     </div>  
 </body>
 </html>
