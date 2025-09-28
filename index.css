@@ -7,6 +7,11 @@
         font-style: normal;  /* Define font style if applicable */
     }
 
+html {
+  min-height of 100%;
+  cursor:  url("images/cursor.cur"), grab;
+
+}
 
 h1 {
   text-align: center;
@@ -26,7 +31,7 @@ h1 {
 
 body {
   background: rgba(175, 200, 13, 1);
-  cursor: pointer;
+  cursor:  url("images/cursor.cur"), pointer;
   display: flex;
   flex-direction: column;
 
@@ -65,6 +70,7 @@ button {
               -0.1vw 0 rgba(0, 0, 0, 1);
   line-height: 0.7;
   letter-spacing: 0.3vw;
+  cursor: grab;
 }
 
 button:hover {
@@ -72,7 +78,6 @@ button:hover {
   color:  rgba(255, 28, 225, 1); 
   text-shadow:  rgba(0, 0, 0, 1)  -0.1vw -0.1vh;
   opacity: 100%;
-  cursor: grab;
 }
 
 /* The Modal (background) */
@@ -130,7 +135,6 @@ button:hover {
    font-family: "Lobster", sans-serif;
    font-weight: 400;
    font-style: normal;
-   cursor: grab;
 
 }
 
@@ -138,6 +142,7 @@ button:hover {
 .close:focus {
   color:  rgba(178, 230, 23, 1);
   text-decoration: none;
+  cursor: grab;
 }
 
 .special-word {
@@ -151,4 +156,13 @@ button:hover {
 
 .special-words {
   color:  rgba(29, 213, 255, 1);
+}
+
+.link {
+  color:  rgba(29, 213, 255, 1);
+ text-decoration: underline dotted;
+}
+
+.link:hover {
+  color:   rgba(178, 230, 23, 1);
 }
