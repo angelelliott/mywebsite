@@ -55,16 +55,12 @@ button {
   align-items: center;    /* Vertically center */
   text-align:center;
   width: 17%;
-  /* padding-top:1%; */
-  padding-right: 3%;
-  padding-bottom: 1%; 
-  padding-left: 3%;
-  font-family: "Lobster", sans-serif;
+  font-family: "Kode Mono", monospace;
   font-weight: 1000;
   font-style: normal;
-  font-size: 3vw;
+  font-size: 3.5vw;
   color: rgba(4, 26, 152, 1);
-  text-shadow:  rgba(223, 158, 130, 1)  -0.1vw -0.1vh;
+  text-shadow:  rgba(0, 0, 0, 1)  -0.1vw -0.1vh;
   box-shadow: -0.5vw -0.5vw rgba(0, 0, 0, 1), 
               -0.1vw 0 rgba(0, 0, 0, 1);
   line-height: 0.7;
@@ -72,12 +68,11 @@ button {
 }
 
 button:hover {
-  background:   rgba(56, 75, 182, 1);
+  background:    rgba(0, 89, 255, 1);
   color:  rgba(255, 28, 225, 1); 
   text-shadow:  rgba(0, 0, 0, 1)  -0.1vw -0.1vh;
   opacity: 100%;
   cursor: grab;
-
 }
 
 /* The Modal (background) */
@@ -100,7 +95,7 @@ button:hover {
   margin: 3% auto; /* 15% from the top and centered */
   padding: 2vw;
   border-radius: 20%;
-  border: 1vw double rgba(168, 217, 24, 1);
+  border: 1vw double rgba(29, 213, 255, 1);
   width: 60%; /* Could be more or less, depending on screen size */
   height: auto;
   display: flex;
@@ -112,7 +107,7 @@ button:hover {
   font-family: "Kode Mono", monospace;
   font-weight: 500;
   font-style: normal;
-  color: rgba(192, 199, 239, 1);
+  color: rgba(128, 40, 10, 1);
   text-shadow: 1px 1px 1px  rgba(0, 0, 0, 1);
   box-shadow: 6px 6px 10px  rgba(0, 0, 0, 1),
     -5px -5px 10px   rgba(0, 0, 0, 1);
@@ -121,7 +116,7 @@ button:hover {
 
 .selfie {
   border-radius: 20%;
-  border: 1vw double rgba(168, 217, 24, 1);
+  border: 1vw double rgba(29, 213, 255, 1);
   float: left;
   width: 30%;
   height: 70%;
@@ -129,7 +124,7 @@ button:hover {
 
 /* The Close Button */
 .close {
-  colorrgba(168, 217, 24, 1);
+  color: rgba(29, 213, 255, 1);
   float: right;
   font-size: 5vw;
    font-family: "Lobster", sans-serif;
@@ -147,7 +142,7 @@ button:hover {
 
 .special-word {
   font-family: "Lobster", sans-serif;
-  color:  rgba(178, 230, 23, 1);
+  color: rgba(29, 213, 255, 1);
   font-optical-sizing: auto;
   font-weight: 500;
   font-size: 150%;
@@ -155,5 +150,5 @@ button:hover {
 }
 
 .special-words {
-  color:  rgba(178, 230, 23, 1);
+  color:  rgba(29, 213, 255, 1);
 }
