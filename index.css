@@ -170,3 +170,26 @@ button:hover {
 .link:hover {
   color:   rgba(178, 230, 23, 1);
 }
+
+@media screen and (max-width: 600px) {
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 4vw;
+
+  }
+
+  button {
+    width: 40vw; 
+  }
+  .modal-content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    /* Vertically center */
+    text-align:center;
+    width: 80%;
+    font-size: 4vw;
+  }
+}
