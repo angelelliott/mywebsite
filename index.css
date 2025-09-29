@@ -192,4 +192,8 @@ button:hover {
     width: 80%;
     font-size: 4vw;
   }
+  
+  .selfie {
+    width: 75%;
+  }
 }
