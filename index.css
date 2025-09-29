@@ -115,9 +115,9 @@ button:hover {
   font-weight: 500;
   font-style: normal;
   color: rgba(128, 40, 10, 1);
-  text-shadow: 1px 1px  rgba(0, 0, 0, 1);
-  box-shadow: 6px 6px 10px  rgba(0, 0, 0, 1),
-    -5px -5px 10px   rgba(0, 0, 0, 1);
+  text-shadow: 0.1vw 0.1vw  rgba(0, 0, 0, 1);
+  box-shadow: 0.1vw 0.1vw 1vw  rgba(0, 0, 0, 1),
+    -0.1vw -0.1vw 1vw   rgba(0, 0, 0, 1);
   line-height: 1.3;
   cursor: grab;
 
@@ -155,7 +155,7 @@ button:hover {
   font-optical-sizing: auto;
   font-weight: 500;
   font-size: 150%;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.1vw;
 }
 
 .special-words {
