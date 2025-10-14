@@ -149,22 +149,46 @@ button:hover {
   cursor: grab;
 }
 
+@keyframes color-change {
+  0% { color: rgba(255, 206, 29, 1); }
+  25% { color: rgba(29, 255, 195, 1); }
+  50% { color: rgba(101, 255, 29, 1); }
+  75% { color: rgba(236, 255, 29, 1); }
+  100% { color: rgba(255, 206, 29, 1); }
+}
+
 .special-word {
   font-family: "Lobster", sans-serif;
-  color: rgba(29, 213, 255, 1);
+   color: rgba(2, 38, 220, 1);
   font-optical-sizing: auto;
   font-weight: 500;
-  font-size: 150%;
+  font-size: 300%;
   letter-spacing: 0.1vw;
 }
 
+.name2 {
+  animation: color-change 3s infinite;
+  font-family: "Lobster", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 200%;
+  letter-spacing: 0.1vw;
+}
+
+.name3 {
+   color: rgba(0, 0, 0, 1);
+   font-size: 120%;
+}
+
 .special-words {
-  color:  rgba(29, 213, 255, 1);
+  color: rgba(29, 213, 255, 1);
+  font-size: 150%;
 }
 
 .link {
-  color:  rgba(29, 213, 255, 1);
+  color:  rgba(33, 255, 29, 1);
  text-decoration: underline dotted;
+ font-size: 120%;
 }
 
 .link:hover {
