@@ -13,6 +13,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/icon.png">
     
@@ -20,6 +27,7 @@
 
 </head>
 <body>
+    <!-- JS scripts -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/Draggable.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js"></script>
@@ -28,39 +36,44 @@
     <script type="module" src="js/modals2.js"></script>
     <script type="module" src="js/modals3.js"></script>
 
-    <h1 id="angel">⋆˚꩜｡☁｡꩜⋆˚ </h1>
-    <div class="buttons">
-            <!-- publications button -->
-            <button type="button" id="pubButton" >music</button>
-            <div id="myModal2" class="modal">
-                <div class="modal-content">
-                    <span class="close" id="myClose2">&times;</span> 
-                    <p><span class="special-word">Listen to my new song! 
-                    </span> <br/><a class="link" href="https://youtu.be/xMHJGd3wwZk?si=Er1WUaMDOe8xipiJ" target="_blank">Click here 😃</a><br/>
-                </div>
-            </div>
 
+    <div class="buttons">
             <!-- about me button -->
-            <button type="button" id="aboutButton" >about me</button>
+            <!-- <button type="button" id="aboutButton" >about me</button> -->
+            <input type="image" src="images/mec-ojo-cropped2.webp" name="abbut" id="aboutButton" class="newButtons" />
             <div id="myModal" class="modal">
                 <div class="modal-content">
+                    
                     <span class="close" id="myClose">&times;</span>  
+                    
                     <img class= "selfie" src="images/IMG_0859.JPG" alt="angel" height="300vw">  
-                    <p> <span class="special-word">Hello!</span><br/> My name is<br/> <span class="name2">Angel Elliott Ulloa </span> <br/> or <u><i><span class="name3">a.e. ulloa</u></i> 🙏 </span>for short. <br/><br/>I am a <span class="special-words"><b>musician</b></span>, <span class="special-words"><b>artist</b></span>, and <span class="special-words"><b>computer scientist</b></span>! </p>
+                    
+                    <p> 
+                        <span class="special-word">Hello!</span><br/> I like to be called <br/> 
+                        <span class="name2">Angel Elliott Ulloa </span> <br/> 
+                        but you might know me as <br/>
+                        <i><span class="name3">a.e. ulloa, <br/> 
+                            angel rodriguez, or <br/> dalia rodriguez.<br/></i> 
+                        </span> <br/>
+                        I am a <span class="special-words"><b>musician</b></span>, <span class="special-words"><b> visual artist</b></span>, and <span class="special-words"><b>computer scientist</b></span>! </p>
                 </div>
             </div>
 
-            <button type="button" id="profButton" >CV stuff</button>
+            <!-- <button type="button" id="profButton" >CV stuff</button> -->
+            <input type="image" src="images/mec-ojo-cropped.webp" name="pubbut" id="profButton" class="newButtons" />
+
              <div id="myModal3" class="modal">
                 <div class="modal-content">
                     <span class="close" id="myClose3">&times;</span>  
-                    <p><span class="special-word">If you must...</span><br/> here are my
-                    <a class="link" href="resume/UlloaAngelResume.pdf" target="_blank">Resume</a>, 
-                    <a class="link" href="https://www.linkedin.com/in/angelelliottt" target="_blank">LinkedIn</a>, and
-                    <a class="link" href="http://www.github.com/angelelliott" target="_blank">Github</a>.
+                    <p><span class="special-word">Contact me</span><br/>
+                    <a class="link" href="resume/UlloaAngelResume.pdf" target="_blank">Resume</a> <br/>
+                    <a class="link" href="https://www.linkedin.com/in/angelelliottt" target="_blank">LinkedIn</a> <br/>
+                    <a class="link" href="http://www.github.com/angelelliott" target="_blank">Github</a> <br/>
                 </p>
                 </div>
             </div>
     </div>  
+
+    <h1 id="angel">angel elliott ulloa</h1>
 </body>
 </html>
