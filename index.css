@@ -28,11 +28,12 @@ body {
 
 .grid-item {
   border: 1px dashed #f9f9f9ff; /* Adds a 1px solid light gray border to each item */
+  border-radius: 50%; 
   text-align: center;
   display: flex;
   justify-content: space-evenly; /* Horizontally center */
   align-items: center;    
-  padding: 0.5vw;
+  padding: 1.5vw;
 
 }
 
@@ -77,13 +78,13 @@ h1 {
 .grid-buttons{
   text-align: center;
   display: flex;
-  justify-content: space-evenly; /* Horizontally center */
+  justify-content: space-between; /* Horizontally center */
   align-items: center;    
 
 }
 
 a {
- cursor: url("images/Moon Link Select 2.cur"), grab;
+ cursor: url("images/moon.cur"), grab;
   
 }
 
