@@ -1,16 +1,41 @@
- @font-face {
+@font-face {
         font-family: "sniglet"; /* Choose a name for your font */
         src: url("fonts/Sniglet Regular.otf") format("otf"), /* Path to your font file */
              url("fonts/Sniglet Regular.ttf") format("ttf"),
              url("fonts/Sniglet-webfont.woff") format("woff"); /* Include other formats for broader browser support */
         font-weight: normal; /* Define font weight if applicable */
         font-style: normal;  /* Define font style if applicable */
-    }
+}
 
 html {
   min-height of 100%;
   cursor: url("images/moon.cur"), pointer;
 }
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background: radial-gradient(rgba(0,0,0,1));
+  color: white;
+  font-family: "Kode Mono", monospace;
+  font-size: 1.3vw;
+
+}
+
+.grid-item {
+  border: 1px dashed #f9f9f9ff; /* Adds a 1px solid light gray border to each item */
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly; /* Horizontally center */
+  align-items: center;    
+  padding: 0.5vw;
+
+}
+
 
 h1 {
   text-align: center;
@@ -18,166 +43,42 @@ h1 {
   font-style: normal;
   color: hsla(56, 99%, 63%, 0.84);
   font-size: 12vw;
-  line-height: 1;
+  line-height: 0;
   padding: 0;
   font-family: "Henny Penny", system-ui;
   font-weight: 400;
   font-style: normal;
-
 } 
 
-body {
-  background: radial-gradient(rgba(0,0,0,1));
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  height: 100vh;
-}
-
-.buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  opacity: 1;
-}
-
 .newButtons {
-  width: 15%;
-  cursor: url("images/Moon Link Select 2.cur"), grab;
-}
-
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0); /*Black w/ opacity */
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #d096c4ff;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 2vw;
-  border-radius: 15%;
-  border: 1vw outset  #db9eceff;
-  width: 60%; /* Could be more or less, depending on screen size */
+  width: 30%;
   height: auto;
+  cursor: url("images/Moon Link Select 2.cur"), grab;
+  
+}
+
+.grid-buttons{
+  text-align: center;
   display: flex;
   justify-content: space-evenly; /* Horizontally center */
-  align-items: center;    /* Vertically center */
-  text-align:center;
-  gap: 5%;
-  font-size: 2vw;
-  font-family: "Kode Mono", monospace;
-  font-weight: 500;
-  font-style: normal;
-  color: rgba(255, 255, 255, 1);
-  text-shadow: 0.1vw 0.1vw  rgba(0, 0, 0, 1);
-  box-shadow: 0.1vw 0.1vw 1vw  rgba(0, 0, 0, 1),
-    -0.1vw -0.1vw 1vw   rgba(0, 0, 0, 1);
-  line-height: 1.3;
+  align-items: center;    
 
 }
 
 .selfie {
-  border-radius: 20%;
-  border: 1vw outset rgba(206, 172, 192, 0.75);
-  float: left;
-  width: 30%;
-  height: 70%;
-}
-
-/* The Close Button */
-.close {
-  color: rgba(174, 152, 239, 0.85);
-  float: right;
-  font-size: 5vw;
-   font-family: "Lobster", sans-serif;
-   font-weight: 400;
-   font-style: normal;
+  width: 50%;
+  height: auto;
 
 }
 
-.close:hover,
-.close:focus {
-  color:  rgba(29, 214, 255, 0.75);
-  text-decoration: none;
-  cursor: url("images/Moon Link Select 2.cur"), grab;
+.grid-selfie {
+ display: flex;
+ justify-content: center; /* Horizontally center */
+ align-items: center;    
+ padding: 0.5vw;
 }
 
 
-.special-word {
-  font-family: "Lobster", sans-serif;
-   color: rgba(192, 183, 246, 1);
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-size: 300%;
-  letter-spacing: 0.1vw;
-}
-
-.name2 {
-  font-family: "Lobster", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-size: 180%;
-  letter-spacing: 0.1vw;
-  color:  rgba(136, 238, 160, 1);
-}
-
-.name3 {
-   color: rgba(215, 210, 244, 1);
-   font-size:120%;
-}
-
-.special-words {
-  color: rgba(240, 219, 196, 1);
-  font-size: 150%;
-}
-
-.link {
-  color:  rgba(255, 206, 29, 1);
- text-decoration: underline dotted;
- font-size: 120%;
-}
-
-.link:hover {
-  color:   rgba(178, 230, 23, 1);
-  cursor: url("images/Moon Link Select 2.cur"), grab;
-}
-
-@media screen and (max-width: 600px) {
-  .buttons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    gap: 4vw;
-
-  }
-
-  button {
-    width: 40vw; 
-  }
-  .modal-content {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;    /* Vertically center */
-    text-align:center;
-    width: 80%;
-    font-size: 4vw;
-  }
-  
-  .selfie {
-    width: 75%;
-  }
+.email {
+  color: white;
 }
