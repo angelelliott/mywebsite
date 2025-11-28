@@ -51,6 +51,11 @@ h1 {
   font-style: normal;
 } 
 
+.z-layer:not(:first-child) {
+	color: #bf9105;
+}
+
+
 .newButtons {
   width: 30%;
   height: auto;
