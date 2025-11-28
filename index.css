@@ -105,3 +105,46 @@ a {
 .email {
   color: white;
 }
+
+@media screen and (max-width: 600px) {
+  body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-templater-rows: repeat();
+    font-size: 2vh;
+  }
+
+  h1{
+    font-size: 11vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+
+  }
+
+  .grid-item {
+  border-radius: 2%; 
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center;    
+  padding: 1.5vw;
+  margin: 3vh;
+  margin-left: 6vh;
+  margin-right: 6vh;
+
+
+  }
+
+  .grid-buttons {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .grid-selfie {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+}
