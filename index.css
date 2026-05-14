@@ -8,7 +8,7 @@
 }
 
 html {
-  min-height of 100%;
+  min-height: 100%;
   cursor: url("images/moon.cur"), pointer;
 }
 
@@ -19,7 +19,7 @@ body {
   justify-content: center;
   align-items: center;
   background-size: cover;
-  background: radial-gradient(rgba(0,0,0,1));
+  background: radial-gradient(rgba(0,0,0,1)); 
   color: white;
   font-family: "Kode Mono", monospace;
   font-size: 1.3vw;
@@ -152,4 +152,5 @@ a {
     margin-top: 2vh;
     margin-bottom: 2vh;
   }
+
 }
