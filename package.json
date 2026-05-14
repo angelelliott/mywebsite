@@ -1,9 +1,11 @@
 {
   "name": "mywebsite",
   "version": "1.0.0",
-  "main": "js/index.js",
+  "main": "scripts/title.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +17,7 @@
     "three": "^0.181.2"
   },
   "devDependencies": {
+    "@vitejs/plugin-react": "^4.7.0",
     "vite": "^6.4.2"
   }
 }

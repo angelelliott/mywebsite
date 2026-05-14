@@ -1,0 +1,206 @@
+@font-face {
+        font-family: "sniglet"; /* Choose a name for your font */
+        src: url("fonts/Sniglet Regular.otf") format("otf"), /* Path to your font file */
+             url("fonts/Sniglet Regular.ttf") format("ttf"),
+             url("fonts/Sniglet-webfont.woff") format("woff"); /* Include other formats for broader browser support */
+        font-weight: normal; /* Define font weight if applicable */
+        font-style: normal;  /* Define font style if applicable */
+}
+
+html {
+  min-height: 100%;
+  cursor: url("images/moon.cur"), pointer;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background: radial-gradient(rgba(0,0,0,1)); 
+  color: white;
+  font-family: "Kode Mono", monospace;
+  font-size: 1.3vw;
+  z-index:-1;
+
+
+}
+
+.item-a {
+  grid-column: col / span  1;
+  grid-row: row ;
+
+}
+.item-b {
+  grid-column: col 2 / span  1;
+  grid-row: row ;
+
+}
+.item-c {
+  grid-column: col 3 / span  1;
+  grid-row: row ;
+
+}
+.item-d {
+  grid-column: col 1 / span  1;
+  grid-row: row 2;
+
+}
+.item-e {
+  grid-column: col 2 / span  1;
+  grid-row: row 2;
+
+}
+.item-f {
+  grid-column: col 3 / span  1;
+  grid-row: row 2;
+
+}
+.item-g {
+  grid-column: col 1 / span  1;
+  grid-row: row 3;
+
+}
+.item-h {
+  grid-column: col 2 / span  1;
+  grid-row: row 3;
+
+}
+.item-i {
+  grid-column: col 3 / span  1;
+  grid-row: row 3;
+
+}
+
+.grid-item {
+  border: 1px dashed #f9f9f9ff; /* Adds a 1px solid light gray border to each item */
+  border-radius: 50%; 
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly; /* Horizontally center */
+  align-items: center;    
+  padding: 1.5vw;
+
+}
+
+
+h1 {
+  text-align: center;
+  font-weight: 400;
+  font-style: normal;
+  color: hsla(56, 99%, 63%, 0.84);
+  font-size: 12vw;
+  line-height: 0;
+  padding: 0;
+  font-family: "Henny Penny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+} 
+
+.z-layer:not(:first-child) {
+	color: #bf9105;
+}
+
+
+.newButtons {
+  width: 30%;
+  height: auto;
+  cursor: url("images/Moon Link Select 2.cur"), grab;
+  animation: shake 0.5s;
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+  
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.grid-buttons{
+  text-align: center;
+  display: flex;
+  justify-content: space-between; /* Horizontally center */
+  align-items: center;    
+
+}
+
+a {
+ cursor: url("images/moon.cur"), grab;
+  
+}
+
+.selfie {
+  width: 50%;
+  height: auto;
+
+}
+
+.grid-selfie {
+ display: flex;
+ justify-content: center; /* Horizontally center */
+ align-items: center;    
+ padding: 0.5vw;
+}
+
+
+.email {
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-templater-rows: repeat();
+    font-size: 2vh;
+  }
+
+  h1{
+    font-size: 11vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+
+  }
+
+  .grid-item {
+  border-radius: 2%; 
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center;    
+  padding: 1.5vw;
+  margin: 3vh;
+  margin-left: 6vh;
+  margin-right: 6vh;
+
+
+  }
+
+  .grid-buttons {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .grid-selfie {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+
+}
+
