@@ -12,10 +12,11 @@ const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.inner
 camera.position.z = 800;
 scene.add(camera);
 
-const renderer = new THREE.WebGLRenderer({canvas});
-renderer.setSize( window.innerWidth, window.innerHeight );
-renderer.setClearColor(new THREE.Color("#1c1624"));
-document.body.appendChild( renderer.domElement );
+const renderer = new THREE.WebGLRenderer({canvas, antialias: true, alpha: true});
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+renderer.setSize(window.innerWidth, window.innerHeight, false);
+// Use a transparent clear so page CSS/background can show through if desired
+renderer.setClearColor(0x000000, 0);
 
 const controls = new TrackballControls( camera, renderer.domElement );
 controls.target.set(0,0,0);
@@ -47,29 +48,34 @@ window.addEventListener('resize', onWindowResize, false)
 function onWindowResize() {
   camera.aspect = window.innerWidth / window.innerHeight
   camera.updateProjectionMatrix()
-  renderer.setSize(window.innerWidth, window.innerHeight)
+  renderer.setSize(window.innerWidth, window.innerHeight, false)
   render()
 }
 
 const timer = new THREE.Timer()
-let delta;
 
 function animate(time) {
   // this is how you tell the browser that you're going to do an animation 
   requestAnimationFrame(animate);
 
-  delta = timer.update().getDelta();
+  timer.update(time);
 
-  
-  camera.position.z -= delta*300; 
+  console.log(time);
+
+  const delta = timer.getDelta(); 
 
   sphere.rotation.x = time / 2000;
   sphere.rotation.y = time / 1000;
 
+  if (time < 4000) {
+    camera.position.z = 40;
+  }
+  if (time > 4000) {
+    camera.position.z -= time/3000; 
+  }
 
-
-  if (camera.position.z < 2) {
-    camera.position.z =2;
+  if (camera.position.z < 2){
+    camera.position.z = 2;
   }
 
   controls.update();
