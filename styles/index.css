@@ -23,8 +23,8 @@ body {
   align-items: center;     /* center items in their cells vertically */
   gap: 0vw;
   background-size: cover;
-  background: radial-gradient(rgba(0,0,0,1));
-  color: hsla(112, 74%, 73%, 0.84);
+  background-color: black;
+  color: hsla(112, 74%, 73%, 1.00);
   font-family: "Kode Mono", monospace;
   font-size: 1.3vw;
 }
@@ -73,7 +73,7 @@ h1 {
   text-align: center;
   font-weight: 400;
   font-style: normal;
-  color: hsla(112, 79%, 63%, 0.84);
+  color: hsla(112, 79%, 63%, 1.00);
   font-size: 12vw;
   line-height: 0;
   padding: 0;
@@ -83,7 +83,7 @@ h1 {
 } 
 
 .z-layer:not(:first-child) {
-	color: #0cc181ff;
+	color: #0cc182ff;
 }
 
 
@@ -130,7 +130,7 @@ a {
   max-width: 100%;
   display: block;
   margin: 0 auto;
-
+}
 
 /* Ensure the container for the selfie is centered when not using .grid-item */
 .item-c {
@@ -138,13 +138,12 @@ a {
   justify-content: center;
   align-items: center;
 }
-}
 
 .grid-selfie {
- display: flex;
- justify-content: center; /* Horizontally center */
- align-items: center;    
- padding: 0.5vw;
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center;    
+  padding: 0.5vw;
 }
 
 
@@ -153,19 +152,31 @@ a {
 
 }
 
-@media screen and (max-width: 600px) {
-  body{
+@media screen and (max-width: 768px) {
+  body {
     display: grid;
     grid-template-columns: 1fr;
-    grid-templater-rows: repeat();
+    grid-auto-rows: auto;
     font-size: 2vh;
+    gap: 1vh;
   }
 
-  h1{
-    font-size: 11vh;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
+  /* Rearrange the visual order */
+  .item-a { order: 1; } 
+  .item-e { order: 2; } 
+  .item-i { order: 3; } 
+  .item-g {order: 4; }
 
+  /* Reset grid positions for mobile */
+  .item-a, .item-b, .item-c,
+  .item-d, .item-e, .item-f,
+  .item-g, .item-h, .item-i {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  h1 {
+    font-size: 11vh;
   }
 
   .grid-item {

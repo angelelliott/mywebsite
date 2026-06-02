@@ -60,10 +60,6 @@ function animate(time) {
 
   timer.update(time);
 
-  console.log(time);
-
-  const delta = timer.getDelta(); 
-
   sphere.rotation.x = time / 2000;
   sphere.rotation.y = time / 1000;
 
