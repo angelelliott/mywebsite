@@ -34,10 +34,21 @@
 
 </head>
 <body>
+    <div class="loader" id="loader">
+        <img src="images/gato.webp" alt="Loading..." class="cat">
+    </div>
+
     <!-- JS scripts -->
     <script src="/scripts/ztext.min.js"></script>
     <script type="module" src="/scripts/title.js"></script>
     <script type="module" src="/scripts/main.js"></script>
+    <script>
+        window.addEventListener("load", () => {
+        const loader = document.getElementById("loader");
+  
+        // Adds the utility class to trigger the smooth CSS fade-out
+        loader.classList.add("loader-hidden")}); 
+    </script>
 
     <canvas id="c"></canvas>  
     
