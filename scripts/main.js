@@ -60,11 +60,12 @@ function animate(time) {
 
   timer.update(time);
 
+  
   sphere.rotation.x = time / 2000;
   sphere.rotation.y = time / 1000;
 
   if (time < 4000) {
-    camera.position.z = 40;
+    camera.position.z = 200;
   }
   if (time > 4000) {
     camera.position.z -= time/3000; 
