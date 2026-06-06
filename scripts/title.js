@@ -13,7 +13,7 @@ let tl = gsap.timeline();
 
 
 tl
-  .from("#angel", {duration: 1, opacity: 0, rotateZ:-10}).delay(4.6)
+  .from("#angel", {duration: 1, opacity: 0, rotateZ:-10}).delay(3)
   .from("#elliott", {duration: 1, opacity:0, rotateZ:10})
   .from("#ulloa", {duration: 1, opacity:0, rotateZ:-10})
   .from(".item-g", {duration: 1, opacity:0});

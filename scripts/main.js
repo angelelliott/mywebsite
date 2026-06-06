@@ -61,14 +61,17 @@ function animate(time) {
   timer.update(time);
 
   
-  sphere.rotation.x = time / 2000;
-  sphere.rotation.y = time / 1000;
+  sphere.rotation.y = time / 2000;
+  // sphere.rotation.x = time / 2000;
 
-  if (time < 4000) {
-    camera.position.z = 200;
+  if (time < 3000) {
+    camera.position.z = 100;
   }
-  if (time > 4000) {
-    camera.position.z -= time/3000; 
+  if (time > 3000) {
+    camera.position.z -= time/800; 
+
+
+    
   }
 
   if (camera.position.z < 2){
