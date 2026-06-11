@@ -209,7 +209,7 @@ a {
   flex-direction: column;
   align-content: center;
   z-index: 9999; /* Ensure it sits above all other content */
-  transition: opacity 2s ease, visibility 1s ease;
+  transition: opacity 1.5s ease, visibility 1s ease;
 }
 
 
