@@ -52,6 +52,7 @@ function onWindowResize() {
   render()
 }
 
+
 const timer = new THREE.Timer()
 
 function animate(time) {

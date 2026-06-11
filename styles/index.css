@@ -9,7 +9,6 @@
 
 html {
   min-height: 100%;
-  cursor: url("images/moon.cur"), pointer;
 }
 
 body {
@@ -195,6 +194,11 @@ a {
 
 }
 
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
 
 .loader {
   position: fixed;
