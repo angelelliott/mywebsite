@@ -1,90 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <title id="title">a.e. ulloa</title>
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="styles/index.css">
-   
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="images/icon.png">
-    <script type="importmap">
-    {
-    "imports": {
-        "three": "https://cdn.jsdelivr.net/npm/three@0.181.2/build/three.module.js",
-        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.181.2/examples/jsm/"
-    }
-    }
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-
-</head>
-<body>
-    <div class="loader slide-in-right" id="loader">
-       <div><img src="images/gato.webp" alt="Welcome!!" class="cat"></div> 
-       <div>  <a> Welcome</a></div> 
-    </div>
-
-    <!-- JS scripts -->
-    <script src="/scripts/ztext.min.js"></script>
-    <script type="module" src="/scripts/title.js"></script>
-    <script type="module" src="/scripts/main.js"></script>
-    <script>
-        window.addEventListener("load", () => {
-        const loader = document.getElementById("loader");
-
-        // Adds the utility class to trigger the smooth CSS fade-out
-        loader.classList.add("loader-hidden")}); 
-    </script>
-
-    <canvas id="c"></canvas>  
-    
-     <h1 class="item-a angel prevent-select" id='angel' data-z >angel</h1>
-     <!-- <div class="item-b grid-item"> you may know me as <br/> Dalia Rodriguez or Angel Rodriguez. </div> -->
-     <div class="item-c"> 
-        <!-- <img class="selfie" src="images/IMG_1566 (1).png" alt="angel" height="300vw">  -->
-    </div>
-     <div class="item-d"> 
-        <!-- <a href="https://ieeexplore.ieee.org/abstract/document/9508986" target=”_blank” >
-        <img src="images/mec-ojo-cropped2.webp" name="abbut" id="aboutButton" class="newButtons" />
-        </a>
-        poke us!
-        <a href="https://link.springer.com/article/10.1007/s13278-023-01128-2" target=”_blank” > 
-            <img src="images/mec-ojo-cropped.webp" name="pubbut" id="profButton" class="newButtons" />
-        </a> -->
-        </div>
-     <h1 class="item-e angel prevent-select" id="elliott" >elliott</h1>
-     <div class="item-f grid-item">
-        <!-- i'm a computer scientist, visual artist, and musician. -->
-    </div>
-     <div class="item-g grid-item"> 
-        <p>
-        contact me: <a class="email" href= "mailto:angel@angelulloa.com">angel@angelulloa.com</a> <br/>
-        linkedin: <a class="email" href="https://www.linkedin.com/in/aeulloa" target="_blank">@aeulloa</a> <br/>
-        github: <a class="email" href="http://www.github.com/angelelliott" target="_blank">@angelelliott</a> 
-    </p>
-    </div>
-     <div class="item-h grid-item">
-        <!-- <p>
-        linkedin: <a class="email" href="https://www.linkedin.com/in/angelelliottt" target="_blank">@angelelliottt</a> <br/>
-        github:   <a class="email" href="http://www.github.com/angelelliott" target="_blank">@angelelliott</a> 
-        </p> -->
-     </div>
-     <h1 class="item-i angel prevent-select" id="ulloa">ulloa</h1>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>a.e. ulloa</title>
+    <link rel="icon" type="image/png" href="/images/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=UnifrakturMaguntia&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
