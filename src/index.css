@@ -171,8 +171,8 @@ a {
   .item-g { order: 4; }
 
   .item-a, .item-b, .item-c,
-  .item-d, .item-e, .item-f,
-  .item-g, .item-h, .item-i {
+  
+  .item-g{
     grid-column: 1;
     grid-row: auto;
   }
@@ -187,10 +187,13 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    justify-items: center;
     padding: 1.5vw;
     margin: 3vh;
     margin-left: 6vh;
     margin-right: 6vh;
+    align-content:center;
+    place-items: center;
   }
 
   .grid-buttons {
