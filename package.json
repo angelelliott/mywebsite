@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.2",
     "@react-three/fiber": "^9.8.2",
     "gsap": "^3.13.0",
     "react": "^19.3.1",

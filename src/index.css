@@ -1,8 +1,7 @@
 @font-face {
-  font-family: "sniglet";
-  src: url("/fonts/Sniglet Regular.otf") format("opentype"),
-       url("/fonts/Sniglet Regular.ttf") format("truetype"),
-       url("/fonts/Sniglet-webfont.woff") format("woff");
+  font-family: "Canobis-demo";
+  src: url("/fonts/Canobis-demo.otf"),
+       url("/fonts/Canobis-demo.woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +14,7 @@ body {
   margin: 0;
   min-height: 100vh;
   background-color: black;
-  color: hsla(112, 74%, 73%, 1.00);
+  color: rgb(9, 16, 114);
   font-family: "Kode Mono", monospace;
   font-size: 1.3vw;
 }
@@ -24,10 +23,9 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   min-height: 100vh;
-  justify-content: center;
-  align-content: center;
+  justify-content: start;
   justify-items: center;
-  align-items: center;
+  align-items: start;
   gap: 0vw;
 }
 
@@ -52,29 +50,34 @@ body {
 .item-d { grid-column: 1 / 2; grid-row: 2 / 3; }
 .item-e { grid-column: 2 / 3; grid-row: 2 / 3; }
 .item-f { grid-column: 3 / 4; grid-row: 2 / 3; }
-.item-g { grid-column: 1 / 2; grid-row: 3 / 4; }
+.item-g { 
+  grid-column: 1 / 2; 
+  grid-row: 3 / 4; 
+  background-color: rgb(236, 145, 19);
+  border: 0.1vw solid rgb(83, 29, 84);
+ }
 .item-h { grid-column: 2 / 3; grid-row: 3 / 4; }
 .item-i { grid-column: 3 / 4; grid-row: 3 / 4; }
 
 .grid-item {
-  border-radius: 50%;
+  border-radius: 12px;
   text-align: center;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   justify-items: center;
-  padding: 1.5vw;
+  padding: 1vw;
 }
 
 h1 {
   text-align: center;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
-  color: hsla(112, 79%, 63%, 1.00);
-  font-size: 12vw;
+  color: rgb(102, 11, 108);
+  font-size: 10vw;
   line-height: 0;
   padding: 0;
-  font-family: "Henny Penny", system-ui;
+  font-family: "Canobis-demo", sans-serif;
 }
 
 .z-heading {
@@ -98,7 +101,7 @@ h1 {
   position: absolute;
   top: 0;
   left: 0;
-  color: #0cc182ff;
+  color: rgb(210, 116, 192);
   pointer-events: none;
   user-select: none;
 }
@@ -119,7 +122,7 @@ h1 {
 }
 
 a {
-  cursor: url("/images/moon.cur"), grab;
+  cursor:click;
 }
 
 .selfie {
@@ -144,7 +147,7 @@ a {
 }
 
 .email {
-  color: #0cc181ff;
+  color: rgb(177, 8, 239);
 }
 
 @media screen and (max-width: 768px) {
@@ -159,9 +162,12 @@ a {
     gap: 1vh;
   }
 
-  .item-a { order: 1; }
-  .item-e { order: 2; }
-  .item-i { order: 3; }
+  .item-a { order: 1;
+            font-size:20vw; }
+  .item-b { order: 2; 
+  font-size:20vw;}
+  .item-c { order: 3;
+  font-size:20vw; }
   .item-g { order: 4; }
 
   .item-a, .item-b, .item-c,
@@ -172,7 +178,7 @@ a {
   }
 
   h1 {
-    font-size: 11vh;
+    font-size: 2vw;
   }
 
   .grid-item {
@@ -213,27 +219,30 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000000ff;
+  background-color: hsl(0, 0%, 0%);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   align-content: center;
   z-index: 9999;
-  transition: opacity 1.5s ease, visibility 1s ease;
+  transition: opacity 2s ease, visibility 1s ease;
 }
 
 .loader-hidden {
   opacity: 0;
   visibility: hidden;
+
+  
 }
 
 .cat {
-  width: 25%;
+  width: 70%;
   height: auto;
   display: block;
   margin: 0 auto;
   animation: shake 1s linear infinite;
+  background-color: black;
 }
 
 @keyframes shake {
@@ -248,4 +257,12 @@ a {
   80% { transform: translate(-1px, -1px) rotate(1deg); }
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.text {
+  font-size: 3vw;
+  font-family: "Fira Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(235, 18, 242);
 }

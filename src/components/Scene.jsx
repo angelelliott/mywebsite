@@ -1,9 +1,9 @@
 import { useEffect, useRef } from 'react';
-import { Canvas, useFrame, useLoader, useThree } from '@react-three/fiber';
+import { Canvas, useFrame, useLoader, useThree, events} from '@react-three/fiber';
 import { BackSide, SRGBColorSpace, TextureLoader } from 'three';
 import { TrackballControls } from 'three/addons/controls/TrackballControls.js';
-
 function PhotoSphere() {
+
   const mesh = useRef(null);
   const texture = useLoader(TextureLoader, '/images/IMG_1566.png');
   texture.colorSpace = SRGBColorSpace;
@@ -26,11 +26,11 @@ function CameraRig() {
   useFrame(({ clock }) => {
     const time = clock.elapsedTime * 1000;
 
-    if (time < 3000) {
-      camera.position.z = 100;
+    if (time < 2.50) {
+      camera.position.z = 1000;
     }
-    if (time > 3000) {
-      camera.position.z -= time / 800;
+    if (time > 2.50) {
+      camera.position.z -= time / 500;
     }
     if (camera.position.z < 2) {
       camera.position.z = 2;
@@ -47,16 +47,20 @@ function Controls() {
   useEffect(() => {
     const next = new TrackballControls(camera, gl.domElement);
     next.target.set(0, 0, 0);
-    next.noPan = true;
-    next.noZoom = true;
-    next.rotateSpeed = 10;
+    next.noPan = false;
+    next.noZoom = false;
+    next.rotateSpeed = 5;
     next.zoomSpeed = 30;
     next.enableDamping = true;
     next.dynamicDampingFactor = 0.2;
     next.maxDistance = 800;
     next.minDistance = 2;
     next.handleResize();
+
+  
     controls.current = next;
+    
+
 
     return () => {
       next.dispose();
@@ -85,7 +89,7 @@ export default function Scene() {
         position: 'fixed',
         inset: 0,
         zIndex: -1,
-        pointerEvents: 'none',
+        pointerEvents: 'onClick',
       }}
     >
       <PhotoSphere />
