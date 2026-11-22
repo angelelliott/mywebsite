@@ -42,7 +42,7 @@ export default function App() {
   }, []);
 
   useLayoutEffect(() => {
-    const tween = gsap.timeline({delay: 5});
+    const tween = gsap.timeline({delay: 4});
     tween
       .from('#angel', { duration: 1, opacity: 0, rotateZ: 10, delay: 0.5 })
       .from('.item-g', { duration: 1, opacity: 0 });

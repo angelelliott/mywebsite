@@ -30,7 +30,7 @@ function CameraRig() {
       camera.position.z = 1000;
     }
     if (time > 2.50) {
-      camera.position.z -= time / 500;
+      camera.position.z -= time / 300;
     }
     if (camera.position.z < 2) {
       camera.position.z = 2;
